@@ -1,0 +1,27 @@
+import(gmp, parallel)
+##Load dynamic library
+useDynLib(rknn, C_knnc = knnc, C_knnr = knnr)
+##useDynLib(rknn, .registration = TRUE, .fixes = "C_")
+
+#Export directive
+export(
+rknnBeg, rknnBel, bestset, confusion, confusion2acc, cv.coef,
+eta, r, lambda, 
+normalize.decscale, normalize.sigmoidal, normalize.softmax, normalize.unit, 
+prebestset, predicted, PRESS, 
+knn.reg, rknn, rknn.cv, 
+#rknn.kf.xcv, rknn.xcv, rknn.pxcv,
+rknnReg, 
+rsqp, 
+rknnSupport, rknnRegSupport, 
+varNotUsed, varUsed
+)
+
+
+S3method(print, rknn)
+S3method(print, rknnBE)
+S3method(print, rknnSupport)
+S3method(plot, rknnSupport)
+S3method(plot, rknnBeg)
+S3method(plot, rknnBel)
+S3method(fitted, rknn)
