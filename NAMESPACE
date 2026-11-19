@@ -1,4 +1,6 @@
 import(gmp, parallel)
+importFrom(graphics, dotchart)
+importFrom(stats, fitted, influence, plogis, resid, sd)
 ##Load dynamic library
 useDynLib(rknn, C_knnc = knnc, C_knnr = knnr)
 ##useDynLib(rknn, .registration = TRUE, .fixes = "C_")

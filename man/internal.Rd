@@ -37,24 +37,16 @@
 \arguments{
   \item{m}{Number of elements in a subset to be drawn.}
   \item{p}{Total number of available features.}  
-  \item{mtry}{Number of features to be drawn for each KNN.}
   \item{eta}{Coverage Probability.}
   \item{nu}{mean mutiplicity of a feature}
   \item{rmax}{number of series terms for independent geometric approximation}
   \item{nsim}{number of simulations for geometric simulation.}
   \item{lambda}{mean number of silient features.}
-  \item{samples}{A vector of indice for a set of observations.}
-  \item{cl}{A factor for classification labels.}
   \item{train}{A data matrix.}  
   \item{test}{A data matrix.}  
   \item{y}{A vector of responses.}
   \item{k}{Number of nearest neighbors.}
   \item{cl}{A vector of class labels.}
-  \item{K}{Number of folds for cross-validation.}
-  \item{pk}{A real number between 0 and to indicate the proportion of the feature set to be kept in each step.}
-  \item{r}{Number of KNN  to be generated.}
-  \item{seed}{An integer seed.}
-  \item{criterion}{either uses mean_accuracy or mean_support for best.}
   \item{obj}{A linear model.}
 } 
 \author{
